@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:e513c138519714fc43145b9c98a6f37528351a620aa03fc64c3c1230acb8784346bd8fa18b3878f86c516922d894d1684f1d4708d74353128c389b971083bbde#npm:5.3.1"],
             ["@vitejs/plugin-react", "npm:1.1.4"],
             ["axios", "npm:0.25.0"],
+            ["chart.js", "npm:3.7.0"],
             ["classnames", "npm:2.3.1"],
             ["eslint", "npm:8.7.0"],
             ["eslint-plugin-react", "virtual:e513c138519714fc43145b9c98a6f37528351a620aa03fc64c3c1230acb8784346bd8fa18b3878f86c516922d894d1684f1d4708d74353128c389b971083bbde#npm:7.28.0"],
@@ -1371,6 +1372,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["chart.js", [
+        ["npm:3.7.0", {
+          "packageLocation": "./.yarn/cache/chart.js-npm-3.7.0-4be016d2ee-050d675d15.zip/node_modules/chart.js/",
+          "packageDependencies": [
+            ["chart.js", "npm:3.7.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["chownr", [
         ["npm:2.0.0", {
           "packageLocation": "./.yarn/cache/chownr-npm-2.0.0-638f1c9c61-c57cf9dd07.zip/node_modules/chownr/",
@@ -1511,6 +1521,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:e513c138519714fc43145b9c98a6f37528351a620aa03fc64c3c1230acb8784346bd8fa18b3878f86c516922d894d1684f1d4708d74353128c389b971083bbde#npm:5.3.1"],
             ["@vitejs/plugin-react", "npm:1.1.4"],
             ["axios", "npm:0.25.0"],
+            ["chart.js", "npm:3.7.0"],
             ["classnames", "npm:2.3.1"],
             ["eslint", "npm:8.7.0"],
             ["eslint-plugin-react", "virtual:e513c138519714fc43145b9c98a6f37528351a620aa03fc64c3c1230acb8784346bd8fa18b3878f86c516922d894d1684f1d4708d74353128c389b971083bbde#npm:7.28.0"],
@@ -3408,7 +3419,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-chartjs-2", "virtual:e513c138519714fc43145b9c98a6f37528351a620aa03fc64c3c1230acb8784346bd8fa18b3878f86c516922d894d1684f1d4708d74353128c389b971083bbde#npm:4.0.1"],
             ["@types/chart.js", null],
             ["@types/react", null],
-            ["chart.js", null],
+            ["chart.js", "npm:3.7.0"],
             ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
