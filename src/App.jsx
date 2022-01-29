@@ -5,23 +5,26 @@ import { fetchData } from './api'
 
 function App() {
     const [data, setData] = useState('')
+    const [country, setCountry] = useState('global')
 
     useEffect(() => {
         const runAsync = async () => {
-            const fetchedData = await fetchData()
+            const fetchedData = await fetchData(country)
             setData(fetchedData)
+            console.log({ fetchedData })
         }
         runAsync().catch((err) => console.error(err))
-    }, [])
+    }, [country])
 
-    console.log(data)
+    console.log({ country })
+
     return (
         <>
             <h1>React App</h1>
             <div className={styles.container}>
                 <Cards data={data} />
-                <CountryPicker data={data} />
-                <Chart data={data} />
+                <CountryPicker setCountry={setCountry} />
+                <Chart data={data} country={country} />
             </div>
         </>
     )

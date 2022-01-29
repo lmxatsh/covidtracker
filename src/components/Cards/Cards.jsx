@@ -4,7 +4,7 @@ import CountUp from 'react-countup'
 import cx from 'classnames'
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
-    console.log({ confirmed, recovered, deaths, lastUpdate })
+    //console.log({ confirmed, recovered, deaths, lastUpdate })
 
     return confirmed ? (
         <div className={styles.container}>
