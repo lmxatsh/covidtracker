@@ -1,10 +1,20 @@
 import { useState, useEffect } from 'react'
 import { fetchDailyData } from '../../api'
+import PropTypes from 'prop-types'
 import { Line, Bar } from 'react-chartjs-2'
 import { Chart as ChartJs, registerables } from 'chart.js'
 ChartJs.register(...registerables)
 
 import styles from './Chart.module.css'
+
+Chart.propTypes = {
+    data: PropTypes.shape({
+        confirmed: PropTypes.string,
+        recovered: PropTypes.string,
+        deaths: PropTypes.string,
+    }),
+    country: PropTypes.string,
+}
 
 const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
     const [dailyData, setDailyData] = useState([])

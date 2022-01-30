@@ -1157,6 +1157,7 @@ __metadata:
     eslint: ^8.7.0
     eslint-plugin-react: ^7.28.0
     prettier: ^2.5.1
+    prop-types: ^15.8.1
     react: ^17.0.2
     react-chartjs-2: ^4.0.1
     react-countup: ^6.1.1
@@ -2768,7 +2769,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:

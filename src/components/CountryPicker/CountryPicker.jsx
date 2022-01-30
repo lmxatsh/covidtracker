@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NativeSelect, FormControl } from '@mui/material'
-import styles from './CountryPicker.module.css'
+import PropTypes from 'prop-types'
 import { fetchCountriesData } from '../../api'
 
 const CountryPicker = ({ setCountry }) => {
@@ -28,6 +28,10 @@ const CountryPicker = ({ setCountry }) => {
             </NativeSelect>
         </FormControl>
     )
+}
+
+CountryPicker.propTypes = {
+    setCountry: PropTypes.func.isRequired,
 }
 
 export default CountryPicker

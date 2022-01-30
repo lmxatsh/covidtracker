@@ -2,7 +2,16 @@ import { Card, CardContent, Typography, Grid } from '@mui/material'
 import styles from './Cards.module.css'
 import CountUp from 'react-countup'
 import cx from 'classnames'
+import PropTypes from 'prop-types'
 
+Cards.propTypes = {
+    data: PropTypes.shape({
+        confirmed: PropTypes.object,
+        recovered: PropTypes.object,
+        deaths: PropTypes.object,
+        lastUpdate: PropTypes.string,
+    }),
+}
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     //console.log({ confirmed, recovered, deaths, lastUpdate })
 
