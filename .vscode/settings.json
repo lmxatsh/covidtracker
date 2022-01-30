@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "eslint.packageManager": "yarn",
+    "eslint.validate": ["javascript", "javascriptreact"],
+    "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+    "search.exclude": {
+        "**/.yarn": true,
+        "**/.pnp.*": true
+    },
+    "eslint.nodePath": ".yarn/sdks"
+}
